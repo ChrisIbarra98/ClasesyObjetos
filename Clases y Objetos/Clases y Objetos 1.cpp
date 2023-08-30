@@ -74,14 +74,16 @@ int main()
                     if(aux==1)
                     {
                         cout<<"\nIngrese el nuevo domicilio: ";
-                        cin>>cambio;
+                        cin.ignore();
+                        getline(cin,cambio);
                         JefePlanta.CambiaDomic(cambio);
                         cout<<"\nCambio Realizado";
                         getch();
                     }else if(aux==2)
                     {
                         cout<<"\nIngrese el nuevo domicilio: ";
-                        cin>>cambio;
+                        cin.ignore();
+                        getline(cin,cambio);
                         JefePersonal.CambiaDomic(cambio);
                         cout<<"\nCambio Realizado";
                         getch();
@@ -146,14 +148,16 @@ int main()
                     if(aux==1)
                     {
                         cout<<"\nIngrese el nombre: ";
-                        cin>>cambio;
+                        cin.ignore();
+                        getline(cin,cambio);
                         JefePlanta.CambiaReportaA(cambio);
                         cout<<"\nCambio Realizado";
                         getch();
                     }else if(aux==2)
                     {
                         cout<<"\nIngrese el nombre: ";
-                        cin>>cambio;
+                        cin.ignore();
+                        getline(cin,cambio);
                         JefePersonal.CambiaReportaA(cambio);
                         cout<<"\nCambio Realizado";
                         getch();
