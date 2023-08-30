@@ -89,14 +89,16 @@ int main()
                     if(aux==Programacion.Clave)
                     {
                         cout<<"\nIngrese el nombre del nuevo maestro: ";
-                        cin>>cambio;
+                        cin.ignore();
+                        getline(cin,cambio);
                         Programacion.CambiaProfe(cambio);
                         cout<<"\nCambio Realizado";
                         getch();
                     }else if(aux==BasesDatos.Clave)
                     {
                         cout<<"\nIngrese el nombre del nuevo maestro: ";
-                        cin>>cambio;
+                        cin.ignore();
+                        getline(cin,cambio);
                         BasesDatos.CambiaProfe(cambio);
                         cout<<"\nCambio Realizado";
                         getch();
